@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NardFinance - Your Complete Financial Resource</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NardFinance</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Master Your Finances</h1>
+            <p>Discover expert insights, powerful tools, and comprehensive resources to achieve your financial goals.</p>
+            <a href="#learn" class="cta-button">Start Learning</a>
+        </section>
+
+        <section id="learn">
+            <h2>Financial Education Hub</h2>
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="articles">Articles</button>
+                    <button class="tab-button" data-tab="videos">Videos</button>
+                    <button class="tab-button" data-tab="podcasts">Podcasts</button>
+                    <button class="tab-button" data-tab="courses">Courses</button>
+                </div>
+                <div class="tab-content">
+                    <div id="articles" class="tab-pane active"></div>
+                    <div id="videos" class="tab-pane"></div>
+                    <div id="podcasts" class="tab-pane"></div>
+                    <div id="courses" class="tab-pane"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools">
+            <h2>Financial Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Compound Interest Calculator</h3>
+                    <div class="calculator">
+                        <input type="number" id="principal" placeholder="Initial investment">
+                        <input type="number" id="rate" placeholder="Annual interest rate (%)">
+                        <input type="number" id="time" placeholder="Time (years)">
+                        <input type="number" id="monthly" placeholder="Monthly contribution">
+                        <button onclick="calculateCompoundInterest()">Calculate</button>
+                        <p id="result"></p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <h3>Investment Growth Chart</h3>
+                    <canvas id="investmentChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Recursos adicionales</h2>
+            <div class="resource-grid">
+                <a href="https://www.investopedia.com/" class="resource-card">
+                    <h3>E-books</h3>
+                    <p>Descarga e-books financieros gratuitos</p>
+                </a>
+
+                <a href="https://www.reddit.com/r/personalfinance/" class="resource-card">
+                    <h3>Comunidad</h3>
+                    <p>Conéctate con personas con ideas afines</p>
+                </a>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get Personalized Advice</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your financial question" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About NardFinance</h3>
+                <p>Empowering individuals to make informed financial decisions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IN</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NardFinance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
